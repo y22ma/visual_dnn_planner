@@ -176,8 +176,8 @@ class label_generator:
         if self.counter % self.skip_num == 0:
             img_name = os.path.join("%08d.jpg"%self.counter)
             cv2.imwrite(os.path.join(self.data_folder, img_name), resized_img)
-            label_name = os.path.join("%08d_label.jpg"%self.counter)
-            cv2.imwrite(os.path.join(self.label_folder, label_name), resized_label)
+            label_name = os.path.join("%08d_label.npy"%self.counter)
+            np.save(os.path.join(self.label_folder, label_name), resized_label)
         self.counter = self.counter + 1
 
         self.img_list.pop(0)
