@@ -5,6 +5,6 @@
     <param name="cam_lidar_extrinsics_yaml" type="string" value="$(find visual_dnn_planner)/cfg/camera_lidar_extrinsic.yaml"/>
     <param name="cam_intrinsics_yaml" type="string" value="$(find visual_dnn_planner)/cfg/udacity_sdc_center_cam.yaml"/>
     <param name="height_threshold" type="double" value="-1.1"/>
-    <param name="skip_num" type="int" value="10"/>
+    <param name="skip_num" type="int" value="1"/>
   </node>
 </launch>
