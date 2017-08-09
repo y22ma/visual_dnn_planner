@@ -69,7 +69,7 @@ class label_generator:
                 self.T_lidar2cam = cam_lidar_extrinsics[0:3, 0:4]
                 self.T_cam2lidar = np.linalg.inv(cam_lidar_extrinsics)[0:3, 0:4]
                 self.t_cam2lidar = self.T_cam2lidar[0:3, 3]
-                self.R_cam2lidar = self.T_cam2lidar[0:3, 0:3].dot(ez.eulerZYX(0.04, 0.02, 0.0))
+                self.R_cam2lidar = self.T_cam2lidar[0:3, 0:3]
             except yaml.YAMLError as exc:
                 print(exc)
 
