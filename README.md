@@ -1,1 +1,2 @@
-This repo generates path proposal labels from LIDAR pointclouds, pose estimates and mono images. The labels can be used to train a CNN autoencoder to propose valid path for autonomous car applications.
+# visual_dnn_planner
+A package that generates path proposal and obstacle by back projecting Velodyne pointclouds into the camera plane.
